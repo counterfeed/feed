@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counterfeed status</title>
+<style>
+body{font:16px/1.4 system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;color:#111}
+code,pre{font:13px/1.4 ui-monospace,monospace}
+pre{background:#f4f4f4;padding:1rem;overflow:auto}
+.muted{color:#555}
+</style>
+</head>
+<body>
+<h1>Counterfeed</h1>
+<p class="muted">Live counterparty feed. Machine-readable JSON is the product.</p>
+<p><a href="./status.json">status.json</a> · <a href="https://github.com/counterfeed/feed/blob/main/METHOD.md">method</a></p>
+<pre id="out">loading…</pre>
+<script>
+fetch('./status.json').then(r=>r.json()).then(j=>{
+  document.getElementById('out').textContent=JSON.stringify(j,null,2);
+}).catch(e=>{document.getElementById('out').textContent=String(e)});
+</script>
+</body>
+</html>
