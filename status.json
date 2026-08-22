@@ -1,8 +1,8 @@
 {
   "product": "counterfeed",
-  "generated_at": "2026-08-22T17:16:00-04:00",
+  "generated_at": "2026-08-22T17:40:00-04:00",
   "method": "https://github.com/counterfeed/feed/blob/main/METHOD.md",
-  "pass": "2026-08-22T17:15:00-04:00",
+  "pass": "2026-08-22T17:16:00-04:00",
   "counts": {
     "listed": 48,
     "probed": 48,
@@ -16,76 +16,466 @@
   "events": [
     {
       "type": "DOWN",
-      "name": "paypal",
+      "name": "PayPal",
       "url": "https://mcp.paypal.com/http",
       "http": 404,
       "ms": 54,
-      "ts": "2026-08-22T17:16:00-04:00",
+      "ts": "2026-08-22T21:16:27Z",
       "substitute": {
-        "name": "stripe",
+        "name": "Stripe",
         "url": "https://mcp.stripe.com",
         "verdict": "UP",
-        "detail": "auth_required_401",
+        "http": 401,
         "ms": 205
       }
     },
     {
       "type": "AUTH_BROKEN",
-      "name": "adplane",
+      "name": "Adplane Google Ads",
+      "url": "https://mcp.adplane.ai",
       "http": 401,
       "ms": 299,
-      "ts": "2026-08-22T17:16:00-04:00",
+      "ts": "2026-08-22T21:16:27Z",
       "substitute": {
-        "name": "adadvisor",
+        "name": "AdAdvisor",
         "url": "https://api.adadvisor.ai/mcp",
         "verdict": "UP",
-        "detail": "auth_required_401",
+        "http": 401,
         "ms": 312
       }
     },
     {
       "type": "AUTH_BROKEN",
-      "name": "adramp",
+      "name": "ADramp Google Ads",
+      "url": "https://mcp.adramp.ai",
       "http": 401,
       "ms": 173,
-      "ts": "2026-08-22T17:16:00-04:00",
+      "ts": "2026-08-22T21:16:27Z",
       "substitute": {
-        "name": "adadvisor",
+        "name": "AdAdvisor",
         "url": "https://api.adadvisor.ai/mcp",
         "verdict": "UP",
-        "detail": "auth_required_401",
+        "http": 401,
         "ms": 312
       }
     },
     {
       "type": "AUTH_BROKEN",
-      "name": "actwise-ideation",
+      "name": "Actwise Ideation",
+      "url": "https://actwise.ai/ideation/mcp/v1",
       "http": 401,
-      "ms": null,
-      "ts": "2026-08-22T17:16:00-04:00",
+      "ms": 393,
+      "ts": "2026-08-22T21:16:27Z",
       "substitute": {
-        "name": "openhelm-research",
+        "name": "OpenHelm Research",
         "url": "https://mcp.openhelm.ai/research/mcp",
         "verdict": "UP",
-        "detail": "auth_required_401",
+        "http": 401,
         "ms": 236
       }
     },
     {
       "type": "AUTH_BROKEN",
-      "name": "agentic-news",
+      "name": "Agentic News",
+      "url": "https://api.agentic-news.ai/mcp",
       "http": 401,
-      "ms": null,
-      "ts": "2026-08-22T17:16:00-04:00",
+      "ms": 93,
+      "ts": "2026-08-22T21:16:27Z",
       "substitute": {
-        "name": "openhelm-research",
+        "name": "OpenHelm Research",
         "url": "https://mcp.openhelm.ai/research/mcp",
         "verdict": "UP",
-        "detail": "auth_required_401",
+        "http": 401,
         "ms": 236
       },
       "gap": "no other news wire on the frozen list"
     }
   ],
-  "endpoints": []
+  "endpoints": [
+    {
+      "name": "ABMeter",
+      "url": "https://mcp.abmeter.ai",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 434,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Actwise Ideation",
+      "url": "https://actwise.ai/ideation/mcp/v1",
+      "verdict": "AUTH_BROKEN",
+      "http": 401,
+      "ms": 393,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "AdAdvisor",
+      "url": "https://api.adadvisor.ai/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 312,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Adplane Google Ads",
+      "url": "https://mcp.adplane.ai",
+      "verdict": "AUTH_BROKEN",
+      "http": 401,
+      "ms": 299,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "ADramp Google Ads",
+      "url": "https://mcp.adramp.ai",
+      "verdict": "AUTH_BROKEN",
+      "http": 401,
+      "ms": 173,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Agentic News",
+      "url": "https://api.agentic-news.ai/mcp",
+      "verdict": "AUTH_BROKEN",
+      "http": 401,
+      "ms": 93,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "AgentLookups Counterscript",
+      "url": "https://rx.agentlookups.ai/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 308,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "AgentLookups Groundtruth",
+      "url": "https://env.agentlookups.ai/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 389,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "AgentLookups Plumbline",
+      "url": "https://contractors.agentlookups.ai/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 324,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "AI-Portal",
+      "url": "https://www.ai-portal.ai/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 306,
+      "ts": "2026-08-22T21:16:28Z"
+    },
+    {
+      "name": "AirShelf Catalog",
+      "url": "https://mcp.airshelf.ai/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 480,
+      "ts": "2026-08-22T21:16:28Z"
+    },
+    {
+      "name": "Aivonic",
+      "url": "https://mcp.aivonic.ai",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 586,
+      "ts": "2026-08-22T21:16:28Z"
+    },
+    {
+      "name": "Alpic",
+      "url": "https://mcp.alpic.ai",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 433,
+      "ts": "2026-08-22T21:16:28Z"
+    },
+    {
+      "name": "Asana",
+      "url": "https://mcp.asana.com/sse",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 400,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Atlassian",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 224,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Agents SDK Docs",
+      "url": "https://agents.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 255,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare API",
+      "url": "https://mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 44,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Workers Bindings",
+      "url": "https://bindings.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 42,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Browser",
+      "url": "https://browser.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 42,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Workers Builds",
+      "url": "https://builds.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 45,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare CASB",
+      "url": "https://casb.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 39,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Docs",
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 41,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare GraphQL",
+      "url": "https://graphql.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 40,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Cloudflare Radar",
+      "url": "https://radar.mcp.cloudflare.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 41,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "DeepWiki",
+      "url": "https://mcp.deepwiki.com/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 169,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Figma",
+      "url": "https://mcp.figma.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 191,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 305,
+      "ts": "2026-08-22T21:16:27Z",
+      "paused": true
+    },
+    {
+      "name": "GOJI",
+      "url": "https://mcp.goji.agency/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 75,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "HubSpot",
+      "url": "https://mcp.hubspot.com",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 131,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 220,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "inference.sh",
+      "url": "https://api.inference.sh/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 272,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Linear",
+      "url": "https://mcp.linear.app/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 54,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "MCP Protocol Docs",
+      "url": "https://modelcontextprotocol.io/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 298,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Neon",
+      "url": "https://mcp.neon.tech/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 173,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Notion",
+      "url": "https://mcp.notion.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 57,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "OpenHelm Dev",
+      "url": "https://mcp.openhelm.ai/dev/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 210,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "OpenHelm Email",
+      "url": "https://mcp.openhelm.ai/email/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 233,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "OpenHelm General",
+      "url": "https://mcp.openhelm.ai/main/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 252,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "OpenHelm Research",
+      "url": "https://mcp.openhelm.ai/research/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 236,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "OpenHelm SEO",
+      "url": "https://mcp.openhelm.ai/seo/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 232,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "PayPal",
+      "url": "https://mcp.paypal.com/http",
+      "verdict": "DOWN",
+      "http": 404,
+      "ms": 54,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Sentry",
+      "url": "https://mcp.sentry.dev/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 56,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "Slack",
+      "url": "https://mcp.slack.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 231,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Slite",
+      "url": "https://api.slite.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 418,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Stripe",
+      "url": "https://mcp.stripe.com",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 205,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "Supabase",
+      "url": "https://mcp.supabase.com/mcp",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 71,
+      "ts": "2026-08-22T21:16:26Z"
+    },
+    {
+      "name": "Tandem Docs",
+      "url": "https://tandem.ac/mcp",
+      "verdict": "UP",
+      "http": 200,
+      "ms": 359,
+      "ts": "2026-08-22T21:16:27Z"
+    },
+    {
+      "name": "Vercel",
+      "url": "https://mcp.vercel.com",
+      "verdict": "UP",
+      "http": 401,
+      "ms": 180,
+      "ts": "2026-08-22T21:16:27Z"
+    }
+  ]
 }
