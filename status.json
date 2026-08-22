@@ -1,0 +1,91 @@
+{
+  "product": "counterfeed",
+  "generated_at": "2026-08-22T17:16:00-04:00",
+  "method": "https://github.com/counterfeed/feed/blob/main/METHOD.md",
+  "pass": "2026-08-22T17:15:00-04:00",
+  "counts": {
+    "listed": 48,
+    "probed": 48,
+    "up": 43,
+    "down": 1,
+    "auth_broken": 4
+  },
+  "notes": [
+    "GitHub remotes are frozen and not currently probed."
+  ],
+  "events": [
+    {
+      "type": "DOWN",
+      "name": "paypal",
+      "url": "https://mcp.paypal.com/http",
+      "http": 404,
+      "ms": 54,
+      "ts": "2026-08-22T17:16:00-04:00",
+      "substitute": {
+        "name": "stripe",
+        "url": "https://mcp.stripe.com",
+        "verdict": "UP",
+        "detail": "auth_required_401",
+        "ms": 205
+      }
+    },
+    {
+      "type": "AUTH_BROKEN",
+      "name": "adplane",
+      "http": 401,
+      "ms": 299,
+      "ts": "2026-08-22T17:16:00-04:00",
+      "substitute": {
+        "name": "adadvisor",
+        "url": "https://api.adadvisor.ai/mcp",
+        "verdict": "UP",
+        "detail": "auth_required_401",
+        "ms": 312
+      }
+    },
+    {
+      "type": "AUTH_BROKEN",
+      "name": "adramp",
+      "http": 401,
+      "ms": 173,
+      "ts": "2026-08-22T17:16:00-04:00",
+      "substitute": {
+        "name": "adadvisor",
+        "url": "https://api.adadvisor.ai/mcp",
+        "verdict": "UP",
+        "detail": "auth_required_401",
+        "ms": 312
+      }
+    },
+    {
+      "type": "AUTH_BROKEN",
+      "name": "actwise-ideation",
+      "http": 401,
+      "ms": null,
+      "ts": "2026-08-22T17:16:00-04:00",
+      "substitute": {
+        "name": "openhelm-research",
+        "url": "https://mcp.openhelm.ai/research/mcp",
+        "verdict": "UP",
+        "detail": "auth_required_401",
+        "ms": 236
+      }
+    },
+    {
+      "type": "AUTH_BROKEN",
+      "name": "agentic-news",
+      "http": 401,
+      "ms": null,
+      "ts": "2026-08-22T17:16:00-04:00",
+      "substitute": {
+        "name": "openhelm-research",
+        "url": "https://mcp.openhelm.ai/research/mcp",
+        "verdict": "UP",
+        "detail": "auth_required_401",
+        "ms": 236
+      },
+      "gap": "no other news wire on the frozen list"
+    }
+  ],
+  "endpoints": []
+}
